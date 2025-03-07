@@ -36,11 +36,11 @@ Helyes válasz: B) Cracker
 
 5. Mi volt a Maják számrendszere?
 
-A) 10-es számrendszer
-B) 20-as számrendszer
+A) 20-es számrendszer
+B) 10-as számrendszer
 C) 60-as számrendszer
 D) 12-es számrendszer
-Helyes válasz: B) 20-as számrendszer
+Helyes válasz: A) 20-as számrendszer
 
 6. Mi volt az ósumer számrendszer alapja?
 
