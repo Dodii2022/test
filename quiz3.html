@@ -18,7 +18,7 @@
         <form id="quiz">
             <!-- Question 1 -->
             <div class="question"> <!-- B a helyes -->
-                <p><strong>17. Mi a BCD (Binary Coded Decimal)?</strong></p>
+                <p><strong>11. Mi a BCD (Binary Coded Decimal)?</strong></p>
                 <label class="valasz">
                     <input type="radio" name="q1" id="q11" value="a"> A, Binárisan kódolt hexadecimális számok
                 </label><br>
@@ -37,7 +37,7 @@
         <form id="quiz">
             <!-- Question 2 -->
             <div class="question"> <!-- B a helyes -->
-                <p><strong>18. Mi a BCD kód kiegészítése, amikor összeadáskor átvitel történik?</strong></p>
+                <p><strong>12. Mi a BCD kód kiegészítése, amikor összeadáskor átvitel történik?</strong></p>
                 <label class="valasz">
                     <input type="radio" name="q2" id="q21" value="a"> A, 0100
                 </label><br>
@@ -56,7 +56,7 @@
         <form id="quiz">
             <!-- Question 2 -->
             <div class="question"> <!-- B a helyes -->
-                <p><strong>19. Mi a fő jellemzője az EBCDIC kódolásnak?</strong></p>
+                <p><strong>13. Mi a fő jellemzője az EBCDIC kódolásnak?</strong></p>
                 <label class="valasz">
                     <input type="radio" name="q3" id ="q31" value="a"> A, 7-bites kódolás
                 </label><br>
@@ -75,7 +75,7 @@
         <form id="quiz">
             <!-- Question 2 -->
             <div class="question"> <!-- C a helyes -->
-                <p><strong>20. Milyen karakterek kódolására használják az UTF-8 kódolást?</strong></p>
+                <p><strong>14. Milyen karakterek kódolására használják az UTF-8 kódolást?</strong></p>
                 <label class="valasz">
                     <input type="radio" name="q4" id ="q41" value="a"> A, Csak angol karakterek
                 </label><br>
@@ -94,7 +94,7 @@
         <form id="quiz">
             <!-- Question 2 -->
             <div class="question"> <!-- A a helyes -->
-                <p><strong>21. Mi az ASCII kódtábla 0-ás karakterének neve?</strong></p>
+                <p><strong>15. Mi az ASCII kódtábla 0-ás karakterének neve?</strong></p>
                 <label class="valasz">
                     <input type="radio" name="q5" id ="q51" value="a"> A, NUL (null)
                 </label><br>
@@ -110,66 +110,7 @@
                 <div class="result" id="result1"></div>
             </div>
 
-        <form id="quiz">
-            <!-- Question 2 -->
-            <div class="question"> <!-- A a helyes -->
-                <p><strong>22. Mi a 7-bites ASCII kódtábla 65-ös kódjának karaktere?</strong></p>
-                <label class="valasz">
-                    <input type="radio" name="q6" id ="q61" value="a"> A, 7-bites kódolás
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q6" id ="q62" value="b"> B, 8-bites kódolás, melyet az IBM fejlesztett
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q6" id ="q63" value="c"> C, 16-bites kódolás
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q6" id ="q64" value="d"> D, 32-bites kódolás
-                </label><br>
-                <div class="result" id="result1"></div>
-            </div>
-
-        <form id="quiz">
-            <!-- Question 2 -->
-            <div class="question"> <!-- A a helyes -->
-                <p><strong>23. Hogyan adhatunk be ASCII karaktereket Windows alatt?</strong></p>
-                <label class="valasz">
-                    <input type="radio" name="q7" id ="q71" value="a"> A, Alt + Numeric Kód
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q7" id ="q72" value="b"> B, Ctrl + Alt + Kód
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q7" id ="q73" value="c"> C, Shift + Numeric Kód
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q7" id ="q74" value="d"> D, Alt + F4
-                </label><br>
-                <div class="result" id="result1"></div>
-            </div>
-
-        <form id="quiz">
-            <!-- Question 2 -->
-            <div class="question"> <!-- A a helyes -->
-                <p><strong>24. Melyik karaktert ábrázolja az ASCII 32-es kódja?</strong></p>
-                <label class="valasz">
-                    <input type="radio" name="q8" id ="q81" value="a"> A, Space
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q8" id ="q82" value="b"> B, !
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q8" id ="q83" value="c"> C, @
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q8" id ="q84" value="d"> D, ~
-                </label><br>
-                <div class="result" id="result1"></div>
-            </div>
-
             <p id ="AAA"></p>
-            
-            <button type="button" onclick="valaszokKuld()">Katt</button>
 
             <script>
                 function valaszokKuld() {
@@ -194,18 +135,7 @@
                     {
                         helyesek+=1;
                     }
-                    if (document.getElementById("q61").checked)
-                    {
-                        helyesek+=1;
-                    }
-                    if (document.getElementById("q71").checked)
-                    {
-                        helyesek+=1;
-                    }
-                    if (document.getElementById("q81").checked)
-                    {
-                        helyesek+=1;
-                    }
+                    
                     document.getElementById("AAA").style.color = "red";
 
                     document.getElementById("AAA").innerHTML=helyesek;

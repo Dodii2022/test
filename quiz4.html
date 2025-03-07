@@ -18,7 +18,7 @@
         <form id="quiz">
             <!-- Question 1 -->
             <div class="question">
-                <p><strong>25. Mi az Unicode kódtábla 0041-es kódja?</strong></p>
+                <p><strong>16. Mi az Unicode kódtábla 0041-es kódja?</strong></p>
                 <label class="valasz">
                     <input type="radio" name="q1" id="q11" value="a"> A, a
                 </label><br>
@@ -37,7 +37,7 @@
         <form id="quiz">
             <!-- Question 2 -->
             <div class="question">
-                <p><strong>26. Mi az Unicode kódtábla U+00B2 karaktere?</strong></p>
+                <p><strong>17. Mi az Unicode kódtábla U+00B2 karaktere?</strong></p>
                 <label class="valasz">
                     <input type="radio" name="q2" id="q21" value="a"> A, ³
                 </label><br>
@@ -56,7 +56,7 @@
         <form id="quiz">
             <!-- Question 2 -->
             <div class="question">
-                <p><strong>27. Melyik Unicode karakter ábrázolja a pénznemet "€"?</strong></p>
+                <p><strong>18. Melyik Unicode karakter ábrázolja a pénznemet "€"?</strong></p>
                 <label class="valasz">
                     <input type="radio" name="q3" id="q31" value="a"> A, ₤
                 </label><br>
@@ -75,7 +75,7 @@
         <form id="quiz">
             <!-- Question 1 -->
             <div class="question">
-                <p><strong>28. Mi az Unicode kódtábla U+2208 karaktere?</strong></p>
+                <p><strong>19. Mi az Unicode kódtábla U+2208 karaktere?</strong></p>
                 <label class="valasz">
                     <input type="radio" name="q1" id="q11" value="a"> A, ∉
                 </label><br>
@@ -94,7 +94,7 @@
         <form id="quiz">
             <!-- Question 1 -->
             <div class="question">
-                <p><strong>29. Hogyan ejtjük az "&" karaktert angolul?</strong></p>
+                <p><strong>20. Hogyan ejtjük az "&" karaktert angolul?</strong></p>
                 <label class="valasz">
                     <input type="radio" name="q1" id="q51" value="a"> A, [ænd] 
                 </label><br>
@@ -110,66 +110,9 @@
                 <div class="result" name="q1" id="result1"></div>
             </div>
 
-        <form id="quiz">
-            <!-- Question 1 -->
-            <div class="question">
-                <p><strong>30. Mi a backslash karakter () angol neve és ejtése?</strong></p>
-                <label class="valasz">
-                    <input type="radio" name="q1" id="q61" value="a"> A, slash, [slæʃ]
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q1" id="q62" value="b"> B, pipe, [paɪp]
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q1" id="q63" value="c"> C, backslash 
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q1" id="q64" value="d"> D, caret, [ˈkærət]
-                </label><br>
-                <div class="result" name="q1" id="result1"></div>
-            </div>
         
-        <form id="quiz">
-            <!-- Question 1 -->
-            <div class="question">
-                <p><strong>31. Mi a különbség a Windows és a UNIX/Linux sortörése között?</strong></p>
-                <label class="valasz">
-                    <input type="radio" name="q1" id="q71" value="a"> A, A Windows sortörés két karakterből áll, míg a UNIX/Linux egy karakterből.
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q1" id="q72" value="b"> B, A Windows sortörés egy karakterből áll, míg a UNIX/Linux két karakterből.
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q1" id="q73" value="c"> C, A Windows és a UNIX/Linux egyaránt ugyanúgy kezeli a sortörést.
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q1" id="q74" value="d"> D, A Windows nem támogatja a sortöréseket, míg a UNIX/Linux igen.
-                </label><br>
-                <div class="result" name="q1" id="result1"></div>
-            </div>
-
-        <form id="quiz">
-            <!-- Question 1 -->
-            <div class="question">
-                <p><strong>32. Melyik Unicode karakter jelöli a szóközt?</strong></p>
-                <label class="valasz">
-                    <input type="radio" name="q1" id="q81" value="a"> A, ␣ (U+2423) Open Box
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q1" id="q82" value="b"> B, ␢ (U+2422) Blank Symbol 
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q1" id="q83" value="c"> C, ␠ (U+2420) Space 
-                </label><br>
-                <label class="valasz">
-                    <input type="radio" name="q1" id="q84" value="d"> D, ␣ (U+2423) Newline
-                </label><br>
-                <div class="result" name="q1" id="result1"></div>
-            </div>
 
             <p id ="AAA"></p>
-            
-            <button type="button" onclick="valaszokKuld()">Katt</button>
 
             <script>
                 function valaszokKuld() {
@@ -194,18 +137,7 @@
                     {
                         helyesek+=1;
                     }
-                    if (document.getElementById("q63").checked)
-                    {
-                        helyesek+=1;
-                    }
-                    if (document.getElementById("q71").checked)
-                    {
-                        helyesek+=1;
-                    }
-                    if (document.getElementById("q83").checked)
-                    {
-                        helyesek+=1;
-                    }
+                    
                     document.getElementById("AAA").style.color = "red";
 
                     document.getElementById("AAA").innerHTML=helyesek;

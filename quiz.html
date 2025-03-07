@@ -105,66 +105,8 @@
                     <div class="result" id="result5"></div>
                 </div>
 
-            <form id="quiz">
-                <!-- Question 6 -->
-                <div class="question">
-                    <p><strong>6. Mi volt az ósumer számrendszer alapja?</strong></p>
-                    <label class="valasz">
-                        <input type="radio" name="q6" id="q61" value="a"> A, 10-es számrendszer 
-                    </label><br>
-                    <label class="valasz">
-                        <input type="radio" name="q6" id="q62" value="b"> B, 60-as számrendszer
-                    </label><br>
-                    <label class="valasz">
-                        <input type="radio" name="q6" id="q63" value="c"> C, 100-as számrendszer
-                    </label><br>
-                    <label class="valasz">
-                        <input type="radio" name="q6" id="q64" value="c"> D, 12-es számrendszer
-                    </label><br>
-                    <div class="result" id="result6"></div>
-                </div>
-
-            <form id="quiz">
-                <!-- Question 7 -->
-                <div class="question">
-                    <p><strong>7. Mi volt az abakusz?</strong></p>
-                    <label class="valasz">
-                        <input type="radio" name="q7" id="q71" value="a"> A, Egy mechanikus számológép, amelyet a középkorban használtak.
-                    </label><br>
-                    <label class="valasz">
-                        <input type="radio" name="q7" id="q72" value="b"> B, Egy csúsztatható korongokkal ellátott számolóeszköz.
-                    </label><br>
-                    <label class="valasz">
-                        <input type="radio" name="q7" id="q73" value="c"> C, Egy papíralapú számológép, amelyet a reneszánszban használtak.
-                    </label><br>
-                    <label class="valasz">
-                        <input type="radio" name="q7" id="q74" value="c"> D, Egy számológép, amelyet csillagászati mérésekhez használtak.
-                    </label><br>
-                    <div class="result" id="result7"></div>
-                </div>
-
-            <form id="quiz">
-                <!-- Question 8 -->
-                <div class="question">
-                    <p><strong>8. Mi volt a fő célja Charles Babbage analitikai gépének?</strong></p>
-                    <label class="valasz">
-                        <input type="radio" name="q8" id="q81" value="a"> A, A csillagászati számítások egyszerűsítése
-                    </label><br>
-                    <label class="valasz">
-                        <input type="radio" name="q8" id="q82" value="b"> B, A gépi programozás felfedezése
-                    </label><br>
-                    <label class="valasz">
-                        <input type="radio" name="q8" id="q83" value="c"> C, A helyi-értékes számrendszer népszerűsítése
-                    </label><br>
-                    <label class="valasz">
-                        <input type="radio" name="q8" id="q84" value="c"> D, A matematikai műveletek gyorsabb elvégzése lyukkártyák segítségéve
-                    </label><br>
-                    <div class="result" id="result8"></div>
-                </div>
-
             <p id ="AAA"></p>
             
-            <button type="button" onclick="valaszokKuld()">Katt</button>
 
             <script>
                 function valaszokKuld() {
@@ -189,18 +131,8 @@
                     {
                         helyesek+=1;
                     }
-                    if (document.getElementById("q62").checked)
-                    {
-                        helyesek+=1;
-                    }
-                    if (document.getElementById("q72").checked)
-                    {
-                        helyesek+=1;
-                    }
-                    if (document.getElementById("q84").checked)
-                    {
-                        helyesek+=1;
-                    }
+                    
+                    
                     document.getElementById("AAA").style.color = "red";
 
                     document.getElementById("AAA").innerHTML=helyesek;
