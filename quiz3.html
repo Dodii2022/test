@@ -173,7 +173,7 @@
 
             <script>
                 function valaszokKuld() {
-                    var helyesek = 0;
+                    var helyesek = localStorage.getItem("helyesValaszokTovabbKuldesiSzama");
                     if (document.getElementById("q12").checked)
                     {
                         helyesek+=1;
