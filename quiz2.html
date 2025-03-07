@@ -18,17 +18,17 @@
         <form id="quiz">
             <!-- Question 1 -->
             <div class="question">
-                <p><strong>1. Kérdés minta 2. oldal</strong></p>
+                <p><strong>1. Kérdés minta</strong></p>
                 <label class="valasz">
-                    <input type="radio" name="q1" value="a"> v1
+                    <input type="radio" name="q1" id="q11" value="a"> v1 (helyes)
                 </label><br>
                 <label class="valasz">
-                    <input type="radio" name="q1" value="b"> v1
+                    <input type="radio" name="q1" id="q12" value="b"> v2
                 </label><br>
                 <label class="valasz">
-                    <input type="radio" name="q1" value="c"> v3
+                    <input type="radio" name="q1" id="q13" value="c"> v3
                 </label><br>
-                <div class="result" id="result1"></div>
+                <div class="result" name="q1" id="result1"></div>
             </div>
         
         <form id="quiz">
@@ -36,15 +36,15 @@
             <div class="question">
                 <p><strong>2. Kérdés minta</strong></p>
                 <label class="valasz">
-                    <input type="radio" name="q2" value="a"> v1
+                    <input type="radio" name="q2" id="q21" value="a"> v1
                 </label><br>
                 <label class="valasz">
-                    <input type="radio" name="q2" value="b"> v1
+                    <input type="radio" name="q2" id="q22" value="b"> v2 (helyes)
                 </label><br>
                 <label class="valasz">
-                    <input type="radio" name="q2" value="c"> v3
+                    <input type="radio" name="q2" id="q23" value="c"> v3
                 </label><br>
-                <div class="result" id="result1"></div>
+                <div class="result" id="result2"></div>
             </div>
 
         <form id="quiz">
@@ -52,19 +52,42 @@
             <div class="question">
                 <p><strong>3. Kérdés minta</strong></p>
                 <label class="valasz">
-                    <input type="radio" name="q3" value="a"> v1
+                    <input type="radio" name="q3" id="q31" value="a"> v1 (helyes)
                 </label><br>
                 <label class="valasz">
-                    <input type="radio" name="q3" value="b"> v1
+                    <input type="radio" name="q3" id="q32" value="b"> v2
                 </label><br>
                 <label class="valasz">
-                    <input type="radio" name="q3" value="c"> v3
+                    <input type="radio" name="q3" id="q33" value="c"> v3
                 </label><br>
-                <div class="result" id="result1"></div>
+                <div class="result" id="result3"></div>
             </div>
 
+            <p id ="AAA"></p>
+            
+            <button type="button" onclick="valaszokKuld()">Katt</button>
 
+            <script>
+                function valaszokKuld() {
+                    var helyesek = 0;
+                    if (document.getElementById("q11").checked)
+                    {
+                        helyesek+=1;
+                    }
+                    if (document.getElementById("q22").checked)
+                    {
+                        helyesek+=1;
+                    }
+                    if (document.getElementById("q31").checked)
+                    {
+                        helyesek+=1;
+                    }
+                    document.getElementById("AAA").style.color = "red";
 
+                    document.getElementById("AAA").innerHTML=helyesek;
+                    localStorage.setItem("helyesValaszokTovabbKuldesiSzama",helyesek);
+                }
+            </script>
 
 
             <a href="quiz3.html"><button type="button" id="next-btn">Tovább a következő oldalra</button></a>
