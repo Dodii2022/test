@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Verdana', Helvetica, sans-serif; /*font-family: 'Times New Roman', Times, serif;*/
     background-color: #C9DABF;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@ body {
 
 .quiz-container {
     background-color: #9CA986;
-    font-size: 20px;
+    font-size: 15px; /*20*/
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
