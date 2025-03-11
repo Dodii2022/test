@@ -8,10 +8,6 @@
 </head>
 <body>
 
-    <script>
-        window.onload = alert(localStorage.getItem("helyesValaszokTovabbKuldesiSzama"));
-    </script>
-
     <div class="quiz-container">
         <h1>QUIZ</h1>
         <hr color="#254336">
@@ -110,10 +106,6 @@
                 <div class="result" name="q1" id="result1"></div>
             </div>
 
-        
-
-            <p id ="AAA"></p>
-
             <script>
                 function valaszokKuld() {
                     var helyesek = parseInt(localStorage.getItem("helyesValaszokTovabbKuldesiSzama"));
@@ -138,11 +130,8 @@
                         helyesek+=1;
                     }
                     
-                    document.getElementById("AAA").style.color = "red";
-
-                    document.getElementById("AAA").innerHTML=helyesek;
                     localStorage.setItem("helyesValaszokTovabbKuldesiSzama",helyesek);
-                    window.location.href = "quiz.html";
+                    window.location.href = "quizEredmeny.html";
                 }
             </script>
 
