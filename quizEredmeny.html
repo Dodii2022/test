@@ -9,12 +9,29 @@
 <body>
 
     <script>
+        var helyesek = parseInt(localStorage.getItem("helyesValaszokTovabbKuldesiSzama"));
+
         window.addEventListener("load", function() {
             const helyesValaszokTovabbKuldesiSzama = localStorage.getItem("helyesValaszokTovabbKuldesiSzama");
             if (helyesValaszokTovabbKuldesiSzama !== null) {
                 document.getElementById("kiEredmeny").textContent = helyesValaszokTovabbKuldesiSzama;
             } else {
                 console.warn("Key 'helyesValaszokTovabbKuldesiSzama' not found in localStorage.");
+            }
+            if (helyesek < 4){
+                document.getElementById("eredmenySzoveg").textContent = "Csalódtam";
+            }
+            else if (8 > helyesek > 4){
+                document.getElementById("eredmenySzoveg").textContent = "Lehetne jobb is!";
+            }
+            else if (12 > helyesek > 8){
+                document.getElementById("eredmenySzoveg").textContent = "Jó az";
+            }
+            else if (16 > helyesek > 12){
+                document.getElementById("eredmenySzoveg").textContent = "Szép";
+            }
+            else if (helyesek >= 20){
+                document.getElementById("eredmenySzoveg").textContent = "Gratulálunk! Tudsz kommunikálni!";
             }
         });
     </script>
@@ -26,6 +43,7 @@
             <!-- Question 1 -->
             <div class="question">
                 <h3 style="text-align: center;">Eredménye: <a id="kiEredmeny"></a> / 20</h3>
+                <p id="eredmenySzoveg">Gratulálunk!</p>
             </div>
 
             <script>
