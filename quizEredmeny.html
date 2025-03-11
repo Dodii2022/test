@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kommunikáció Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <script>
+        window.addEventListener("load", function() {
+            const helyesValaszokTovabbKuldesiSzama = localStorage.getItem("helyesValaszokTovabbKuldesiSzama");
+            if (helyesValaszokTovabbKuldesiSzama !== null) {
+                document.getElementById("kiEredmeny").textContent = helyesValaszokTovabbKuldesiSzama;
+            } else {
+                console.warn("Key 'helyesValaszokTovabbKuldesiSzama' not found in localStorage.");
+            }
+        });
+    </script>
+
+    <div class="quiz-container">
+        <h1>QUIZ</h1>
+        <hr color="#254336">
+        <form id="quiz">
+            <!-- Question 1 -->
+            <div class="question">
+                <p>Eredménye: <a id="kiEredmeny"></a></p>
+            </div>
+
+            <script>
+                function valaszokKuld() {
+                    localStorage.setItem("helyesValaszokTovabbKuldesiSzama",0);
+                    window.location.href = "quiz.html";
+                }
+            </script>
+
+                <a class="button">
+                    <button type="button" onclick="valaszokKuld()" id="next-btn">Vissza az elejére</button>
+                </a>
+
+</body>
+</html>
